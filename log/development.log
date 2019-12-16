@@ -581,3 +581,415 @@ Processing by Devise::PasswordsController#new as HTML
 Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColToUsers (20191216164306)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mALTER TABLE "users" ADD "first_name" varchar[0m
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "last_name" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191216164306"]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:45:54 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 37ms (ActiveRecord: 1.0ms)
+
+
+  
+SyntaxError (/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:8: syntax error, unexpected keyword_true, expecting ')'
+...il_field :email, :required true, autofocus: true, autocomple...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:8: Can't assign to true
+...l_field :email, :required true, autofocus: true, autocomplet...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:8: Can't assign to true
+...required true, autofocus: true, autocomplete: "email" );@out...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:13: syntax error, unexpected keyword_true, expecting ')'
+...il_field :email, :required true, autocomplete: "email" );@ou...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:13: Can't assign to true
+...l_field :email, :required true, autocomplete: "email" );@out...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:18: syntax error, unexpected keyword_true, expecting ')'
+...il_field :email, :required true, autocomplete: "email" );@ou...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:18: Can't assign to true
+...l_field :email, :required true, autocomplete: "email" );@out...
+...                              ^):
+  
+app/views/devise/registrations/new.html.erb:8: syntax error, unexpected keyword_true, expecting ')'
+app/views/devise/registrations/new.html.erb:8: Can't assign to true
+app/views/devise/registrations/new.html.erb:8: Can't assign to true
+app/views/devise/registrations/new.html.erb:13: syntax error, unexpected keyword_true, expecting ')'
+app/views/devise/registrations/new.html.erb:13: Can't assign to true
+app/views/devise/registrations/new.html.erb:18: syntax error, unexpected keyword_true, expecting ')'
+app/views/devise/registrations/new.html.erb:18: Can't assign to true
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:47:01 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:8: syntax error, unexpected keyword_true, expecting ')'
+...il_field :email, :required true, autofocus: true, autocomple...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:8: Can't assign to true
+...l_field :email, :required true, autofocus: true, autocomplet...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:8: Can't assign to true
+...required true, autofocus: true, autocomplete: "email" );@out...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:13: syntax error, unexpected keyword_true, expecting ')'
+...put :first_name, :required true, autocomplete: "email" );@ou...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:13: Can't assign to true
+...ut :first_name, :required true, autocomplete: "email" );@out...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:18: syntax error, unexpected keyword_true, expecting ')'
+...nput :last_name, :required true, autocomplete: "email" );@ou...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:18: Can't assign to true
+...put :last_name, :required true, autocomplete: "email" );@out...
+...                              ^):
+  
+app/views/devise/registrations/new.html.erb:8: syntax error, unexpected keyword_true, expecting ')'
+app/views/devise/registrations/new.html.erb:8: Can't assign to true
+app/views/devise/registrations/new.html.erb:8: Can't assign to true
+app/views/devise/registrations/new.html.erb:13: syntax error, unexpected keyword_true, expecting ')'
+app/views/devise/registrations/new.html.erb:13: Can't assign to true
+app/views/devise/registrations/new.html.erb:18: syntax error, unexpected keyword_true, expecting ')'
+app/views/devise/registrations/new.html.erb:18: Can't assign to true
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:47:02 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:8: syntax error, unexpected keyword_true, expecting ')'
+...il_field :email, :required true, autofocus: true, autocomple...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:8: Can't assign to true
+...l_field :email, :required true, autofocus: true, autocomplet...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:8: Can't assign to true
+...required true, autofocus: true, autocomplete: "email" );@out...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:13: syntax error, unexpected keyword_true, expecting ')'
+...put :first_name, :required true, autocomplete: "email" );@ou...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:13: Can't assign to true
+...ut :first_name, :required true, autocomplete: "email" );@out...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:18: syntax error, unexpected keyword_true, expecting ')'
+...nput :last_name, :required true, autocomplete: "email" );@ou...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:18: Can't assign to true
+...put :last_name, :required true, autocomplete: "email" );@out...
+...                              ^):
+  
+app/views/devise/registrations/new.html.erb:8: syntax error, unexpected keyword_true, expecting ')'
+app/views/devise/registrations/new.html.erb:8: Can't assign to true
+app/views/devise/registrations/new.html.erb:8: Can't assign to true
+app/views/devise/registrations/new.html.erb:13: syntax error, unexpected keyword_true, expecting ')'
+app/views/devise/registrations/new.html.erb:13: Can't assign to true
+app/views/devise/registrations/new.html.erb:18: syntax error, unexpected keyword_true, expecting ')'
+app/views/devise/registrations/new.html.erb:18: Can't assign to true
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:48:00 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (354.8ms)
+Completed 500 Internal Server Error in 358ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x000056010e69f900>):
+    10: 
+    11:   <div class="field">
+    12:     <%= f.label :first_name %><br />
+    13:     <%= f.input :first_name, required: true, autocomplete: "email" %>
+    14:   </div>
+    15: 
+    16:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:13:in `block in _app_views_devise_registrations_new_html_erb___4090392579320299265_47281268619920'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___4090392579320299265_47281268619920'
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:48:35 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (278.7ms)
+Completed 500 Internal Server Error in 282ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x00007f57345a0248>):
+    10: 
+    11:   <div class="field">
+    12:     <%= f.label :first_name %><br />
+    13:     <%= f.input :first_name, required: true %>
+    14:   </div>
+    15: 
+    16:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:13:in `block in _app_views_devise_registrations_new_html_erb___4090392579320299265_70006258681240'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___4090392579320299265_70006258681240'
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:49:51 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (308.1ms)
+Completed 500 Internal Server Error in 341ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x00007fb31c5785d8>):
+    10: 
+    11:   <div class="field">
+    12:     <%= f.label :first_name %><br />
+    13:     <%= f.input :first_name, required: true %>
+    14:   </div>
+    15: 
+    16:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:13:in `block in _app_views_devise_registrations_new_html_erb___2187742670524792174_47206125363620'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2187742670524792174_47206125363620'
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:50:12 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (318.5ms)
+Completed 500 Internal Server Error in 322ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `text' for #<ActionView::Helpers::FormBuilder:0x000055de10b8cf88>):
+    10: 
+    11:   <div class="field">
+    12:     <%= f.label :first_name %><br />
+    13:     <%= f.text :first_name, required: true %>
+    14:   </div>
+    15: 
+    16:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:13:in `block in _app_views_devise_registrations_new_html_erb___2187742670524792174_47206125721300'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2187742670524792174_47206125721300'
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:50:43 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (1.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (267.0ms)
+Completed 500 Internal Server Error in 270ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x00007fb31c43c4d0>):
+    10: 
+    11:   <div class="field">
+    12:     <%= f.label :first_name %><br />
+    13:     <%= f.input :first_name, required: true %>
+    14:   </div>
+    15: 
+    16:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:13:in `block in _app_views_devise_registrations_new_html_erb___2187742670524792174_70203625159160'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2187742670524792174_70203625159160'
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:50:46 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (249.2ms)
+Completed 500 Internal Server Error in 256ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x000055de10c64118>):
+    10: 
+    11:   <div class="field">
+    12:     <%= f.label :first_name %><br />
+    13:     <%= f.input :first_name, required: true %>
+    14:   </div>
+    15: 
+    16:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:13:in `block in _app_views_devise_registrations_new_html_erb___2187742670524792174_70203857787460'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2187742670524792174_70203857787460'
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:50:48 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (267.3ms)
+Completed 500 Internal Server Error in 272ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `input' for #<ActionView::Helpers::FormBuilder:0x000055de1081d028>):
+    10: 
+    11:   <div class="field">
+    12:     <%= f.label :first_name %><br />
+    13:     <%= f.input :first_name, required: true %>
+    14:   </div>
+    15: 
+    16:   <div class="field">
+  
+app/views/devise/registrations/new.html.erb:13:in `block in _app_views_devise_registrations_new_html_erb___2187742670524792174_47206124186220'
+app/views/devise/registrations/new.html.erb:3:in `_app_views_devise_registrations_new_html_erb___2187742670524792174_47206124186220'
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:52:01 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (41.0ms)
+Completed 200 OK in 179ms (Views: 177.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:53:13 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/registrations/new.html.erb within layouts/application (1.1ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/jimmy/code/BBBRK/ez-rider/app/views/devise/registrations/new.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+...last_name, required: true label: false );@output_buffer.safe...
+...                          ^~~~~):
+  
+app/views/devise/registrations/new.html.erb:18: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:53:22 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 49ms (Views: 47.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-16 17:53:37 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 34ms (Views: 32.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-12-16 17:53:58 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eaHW6EP2lvriJZAduL71qJALE4dF3LhF0xKYvo2qnehIYEGTov+t/xSo+flqgF5lw1sVQAA6W6FckuSxAHn2mA==", "user"=>{"email"=>"adresseadechet0212+1@gmail.com", "first_name"=>"Jimmy", "last_name"=>"Gressier", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: :first_name, :last_name
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "adresseadechet0212+1@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["email", "adresseadechet0212+1@gmail.com"], ["encrypted_password", "$2a$11$9l4moblm1mgSJ4fqEbJzSOFPSxhglK31TC/5Qvz3yT4i4Aey9109u"], ["created_at", "2019-12-16 16:53:58.370935"], ["updated_at", "2019-12-16 16:53:58.370935"]]
+  [1m[35m (30.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 181ms (ActiveRecord: 31.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-16 17:53:58 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/users/sign_in" for ::1 at 2019-12-16 18:01:35 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 36ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-16 18:01:35 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 216ms (Views: 214.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-16 18:01:37 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fMSRes4m4HnsOMWC3yRwlpnQO9J8BHaKGZlVhwGH/A6YGsT8EdYRxTc2l9usNRLKvv7frm4G8JQfDf4LSFgh4w=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2019-12-16 18:01:37 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 20ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-16 18:01:38 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-16 18:01:40 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.5ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.5ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2019-12-16 18:01:55 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QGFgd2pzeILQB0cOvLxOR3S3zfWXkvoOaCW0TvRAkeKR4Rywt69ZgjgxHOKKt7GYsQ7eqbGmJ/l9/K6STV8k5A==", "user"=>{"email"=>"adresseadechet0212+2@gmail.com", "first_name"=>"Jimmy", "last_name"=>"Gressier", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "adresseadechet0212+2@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "adresseadechet0212+2@gmail.com"], ["encrypted_password", "$2a$11$EevtYDBYqVugis71SC5sr.ibh.kjajABuRZc6j9aZKcfmacrwAnSK"], ["created_at", "2019-12-16 17:01:55.900299"], ["updated_at", "2019-12-16 17:01:55.900299"], ["first_name", "Jimmy"], ["last_name", "Gressier"]]
+  [1m[35m (53.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 200ms (ActiveRecord: 55.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-16 18:01:55 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 18ms (Views: 16.3ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
