@@ -1,0 +1,15 @@
+<h1>DASHBOARD</h1>
+
+
+<div class="container text-center">
+    <% @motos.order(:id).each do |moto| %>
+
+        <p><%= moto.modele.nom %></p>
+        <p><%= moto.km %></p>
+        <p><%= moto.date_circu %></p>
+
+    <% end %>
+</div>
+
+
+<button type="button" class="btn btn-danger">Danger</button>
