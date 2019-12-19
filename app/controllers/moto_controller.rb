@@ -1,0 +1,3 @@
+class MotoController < ApplicationController
+    
+end

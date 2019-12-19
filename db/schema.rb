@@ -10,7 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191216164306) do
+ActiveRecord::Schema.define(version: 20191217113138) do
+
+  create_table "marques", force: :cascade do |t|
+    t.string "nom"
+  end
+
+  create_table "modeles", force: :cascade do |t|
+    t.string "nom"
+    t.integer "marque_id"
+  end
+
+  create_table "motos", force: :cascade do |t|
+    t.integer "modele_id"
+    t.datetime "date_circu"
+    t.integer "km"
+    t.datetime "date_modif"
+    t.integer "user_id"
+    t.index ["modele_id"], name: "index_motos_on_modele_id"
+    t.index ["user_id"], name: "index_motos_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
