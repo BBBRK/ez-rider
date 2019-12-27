@@ -4537,3 +4537,2105 @@ Processing by HomeController#dashboard as HTML
 Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for ::1 at 2019-12-19 17:44:15 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (28.9ms)
+Completed 200 OK in 5937ms (Views: 5928.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-12-19 17:45:46 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 2554ms (Views: 2552.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-19 17:46:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 5722ms (Views: 5720.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/fonts/font-awesome/fa-solid-900.woff2" for ::1 at 2019-12-19 17:46:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/font-awesome/fa-solid-900.woff2"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/fonts/font-awesome/fa-solid-900.woff" for ::1 at 2019-12-19 17:46:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/font-awesome/fa-solid-900.woff"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/fonts/font-awesome/fa-solid-900.ttf" for ::1 at 2019-12-19 17:46:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/font-awesome/fa-solid-900.ttf"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-19 17:46:43 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (3.0ms)
+Completed 200 OK in 3702ms (Views: 3701.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-19 17:46:54 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"c6ZOAp8/Xj7SZfn7Qi6ZTgLZ9g6TwGTCdvbrElEZXZffztX/yQ0DeEk2kcsXjCTt2cNkPXXY94RK02zqS41SuA=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-19 17:46:54 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 62ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-19 17:47:01 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (223.0ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 274ms (Views: 272.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-19 17:47:13 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bpP8tWVFONN/nolrJg4ZCr78vNhUr104yy4s7XgZPMeDeTvznp+ZLAmkBZEcWLSGyvvsFMG3F+DT1awM6Vcacg==", "user"=>{"email"=>"adresseadechet0212+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adresseadechet0212+1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 332ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2019-12-19 17:47:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-19 17:47:26 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (21.4ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 272ms (Views: 67.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:11:50 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 379ms (Views: 370.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-12-27 12:11:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-27 12:11:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 55ms (Views: 53.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:11:57 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 60ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:11:58 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-27 12:11:59 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (56.9ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 135ms (Views: 113.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-27 12:12:03 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (8.5ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 55.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-27 12:12:14 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sLN+jjyzxzDM6poaO+17mt2NdMNTf8vL7WxAg59lgx53OufaUSZQWfOQp9vzMxwPhBvgGJef08XuMmn7a+p8cw==", "user"=>{"email"=>"adresseadechet0212+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adresseadechet0212+1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 146ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:12:14 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:13:31 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (27.0ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 85ms (Views: 67.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:19:56 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (8.6ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 368ms (Views: 336.7ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-27 12:19:59 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"x3kx/JqEZJ+DxaXyftLitA1yiTUaTzz5EJZwC6gyFyPPBkUziIUILLQIsqAGa8ldqmIl8laL8hzALcmpIBOI0g=="}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:19:59 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 51ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:20:01 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 56ms (Views: 54.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:20:01 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:20:02 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:20:02 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 56ms (Views: 54.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:20:02 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 54ms (Views: 52.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:20:02 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 58ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-27 12:20:03 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 64ms (Views: 62.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-27 12:20:14 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"GKDMjNlPf95o7GYjkGutMylH9PHT5EtHTJgIINHYV7SOGvtpRdPrFhvADpnyr4ZT273Ku6tTfQ6GSFziB94E2Q==", "user"=>{"email"=>"adresseadechet0212+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adresseadechet0212+1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 136ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:20:14 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 53ms (Views: 51.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:20:17 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:25:11 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 61ms (Views: 60.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:25:12 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:25:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:25:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:25:13 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-27 12:25:15 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VFJO4BC4lOvt8Mz3pr+WUI4qDpdqLNLpPE8JIKmqXlYhsaS8lgYtSODdwqU9+oIilmObD1RcHInawG4GIirT+w=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:25:15 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-27 12:25:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 52ms (Views: 50.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-27 12:25:25 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uxnngOOuPewVPrE4UE5LkfVUgmHAI2ub+JsICZb4u231bhoH+JU6/NN5L7/0+I5nQWWDDGwrJ4Ff2OhRlJOMfg==", "user"=>{"email"=>"adresseadechet0212+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adresseadechet0212+1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 136ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:25:25 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 57ms (Views: 56.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:25:27 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:28:17 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 51ms (Views: 49.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:28:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 63ms (Views: 61.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:28:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (3.5ms)
+Completed 200 OK in 54ms (Views: 52.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:28:18 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 56ms (Views: 53.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:28:23 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.9ms)
+Completed 200 OK in 54ms (Views: 52.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:28:24 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.8ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 69ms (Views: 64.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:28:26 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.8ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 93ms (Views: 88.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:28:27 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 82ms (Views: 77.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:43:21 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 422ms (Views: 414.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2019-12-27 12:43:21 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2019-12-27 12:44:08 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (20.3ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 98ms (Views: 74.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-27 12:44:16 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"G1RMcSugLF0GThnGhPAbPB2t826Gmix0BtftS32HXCaNixQ5LNB/Z2QN3ihe79YtLg4qmxt4N2qvOO2icaCiSg==", "user"=>{"email"=>"adresseadechet0212+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adresseadechet0212+1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 148ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 12:44:16 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:44:19 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.5ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (20.3ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 87ms (Views: 67.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:46:27 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 57ms (Views: 54.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:46:38 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:46:46 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 48ms (Views: 44.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:46:56 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (12.5ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 86ms (Views: 82.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/add" for ::1 at 2019-12-27 12:46:58 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/add"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2019-12-27 12:46:59 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 52ms (Views: 46.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/add" for ::1 at 2019-12-27 12:47:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/add"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2019-12-27 12:47:25 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 54ms (Views: 48.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:53:19 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 55ms (Views: 49.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:54:07 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 65ms (Views: 60.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:57:22 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 7131ms (Views: 7125.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 12:58:02 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (4.3ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 3888ms (Views: 3883.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 13:01:34 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 13:01:47 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 56ms (Views: 51.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 13:02:22 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 3520ms (Views: 3516.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 13:03:54 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.7ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 63ms (Views: 59.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 13:03:55 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 70ms (Views: 65.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 13:04:04 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 3852ms (Views: 3849.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 13:04:49 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 3682ms (Views: 3677.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 13:05:37 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 3737ms (Views: 3733.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 13:06:04 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (3.4ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 3638ms (Views: 3635.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 13:06:37 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2[0m
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered home/dashboard.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2019-12-27 13:40:07 +0100
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"H3nW/NHZVG5pOTjcvMJJfHBo5y6ILuuqaIUbOtMxt/YEVvMzVJw2g4OuUMcv32ccJZciUMeQe934vpmhl/3bCg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 232ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 13:40:08 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 49ms (Views: 47.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-27 13:40:09 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.8ms)
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (56.2ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 111ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-27 13:59:54 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.6ms)
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (10.1ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 85ms (Views: 64.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2019-12-27 13:59:55 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.7ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (11.2ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 81ms (Views: 78.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2019-12-27 13:59:57 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 70ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2019-12-27 14:00:05 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"C4UTvyvd/uBuSF+h170J1G0lzOKfIxfiYOk/tLIO/YRS7LcIDqZL2tATYvNVwaIasMbq+79mGPARRA+MepY6hw==", "user"=>{"email"=>"adresseadechet0212+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adresseadechet0212+1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 135ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 14:00:05 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 59ms (Views: 57.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 14:00:08 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (40.3ms)
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 3.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `marque' for #<User:0x00007f8de9a0aa40>):
+    29:                         <label class="col-lg-12 col-form-label label">Marque</label>
+    30: 
+    31:                         <div class="col-lg-12">
+    32:                             <%= f.input :marque,
+    33:                                 label: false,
+    34:                                 collection: @marques%>
+    35:                         </div>
+  
+app/views/home/dashboard.html.erb:32:in `block in _app_views_home_dashboard_html_erb___1273060267116260017_70123743467360'
+app/views/home/dashboard.html.erb:26:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123743467360'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:00:53 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (10.8ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.9ms)
+
+
+  
+ActionView::Template::Error (undefined method `km' for #<User:0x00007f8de8d6cbf8>):
+    29:                         <label class="col-lg-12 col-form-label label">Marque</label>
+    30: 
+    31:                         <div class="col-lg-12">
+    32:                             <%= f.input :km,
+    33:                                 label: false,
+    34:                                 collection: @marques%>
+    35:                         </div>
+  
+app/views/home/dashboard.html.erb:32:in `block in _app_views_home_dashboard_html_erb___1273060267116260017_70123736740600'
+app/views/home/dashboard.html.erb:26:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123736740600'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:00:54 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (11.0ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `km' for #<User:0x00007f8e07ffb828>):
+    29:                         <label class="col-lg-12 col-form-label label">Marque</label>
+    30: 
+    31:                         <div class="col-lg-12">
+    32:                             <%= f.input :km,
+    33:                                 label: false,
+    34:                                 collection: @marques%>
+    35:                         </div>
+  
+app/views/home/dashboard.html.erb:32:in `block in _app_views_home_dashboard_html_erb___1273060267116260017_70123998136640'
+app/views/home/dashboard.html.erb:26:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123998136640'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:02:29 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (15.8ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 102ms (Views: 68.2ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 14:02:45 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (6.8ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `nom' for #<ActiveRecord::Relation [#<Marque id: 1, nom: "ducati">]>
+Did you mean?  none):
+    31:                         <div class="col-lg-12">
+    32:                             <%= f.input :km,
+    33:                                 label: false,
+    34:                                 collection: @marques.nom %>
+    35:                         </div>
+    36:                     </div>
+    37: 
+  
+app/views/home/dashboard.html.erb:34:in `block in _app_views_home_dashboard_html_erb___1273060267116260017_70123985719060'
+app/views/home/dashboard.html.erb:26:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123985719060'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:03:35 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (7.7ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 66ms (Views: 62.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 14:03:49 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (6.6ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 70ms (Views: 66.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 14:04:00 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.3ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (8.2ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 64ms (Views: 60.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 14:04:16 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (7.6ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `nom' for #<ActiveRecord::Relation [#<Marque id: 1, nom: "ducati">]>
+Did you mean?  none):
+    31:                         <div class="col-lg-12">
+    32:                             <%= f.input :km,
+    33:                                 label: false,
+    34:                                 collection: @marques.nom %>
+    35:                         </div>
+    36:                     </div>
+    37: 
+  
+app/views/home/dashboard.html.erb:34:in `block in _app_views_home_dashboard_html_erb___1273060267116260017_70123630892780'
+app/views/home/dashboard.html.erb:26:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123630892780'
+Started PUT "/__web_console/repl_sessions/1b55a8828e4d64d3142a4316582e0c27" for ::1 at 2019-12-27 14:04:19 +0100
+Started PUT "/__web_console/repl_sessions/1b55a8828e4d64d3142a4316582e0c27" for ::1 at 2019-12-27 14:04:23 +0100
+Started PUT "/__web_console/repl_sessions/1b55a8828e4d64d3142a4316582e0c27" for ::1 at 2019-12-27 14:04:25 +0100
+  [1m[36mMarque Load (0.4ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1b55a8828e4d64d3142a4316582e0c27" for ::1 at 2019-12-27 14:04:30 +0100
+Started PUT "/__web_console/repl_sessions/1b55a8828e4d64d3142a4316582e0c27" for ::1 at 2019-12-27 14:04:30 +0100
+  [1m[36mMarque Load (0.6ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+Started PUT "/__web_console/repl_sessions/1b55a8828e4d64d3142a4316582e0c27" for ::1 at 2019-12-27 14:04:37 +0100
+Started PUT "/__web_console/repl_sessions/1b55a8828e4d64d3142a4316582e0c27" for ::1 at 2019-12-27 14:04:43 +0100
+  [1m[36mMarque Load (0.4ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+Started GET "/dashboard" for ::1 at 2019-12-27 14:06:05 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  Rendered home/dashboard.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:35: syntax error, unexpected ':', expecting ')'
+...                  label_method: lambda { |marques| "#{marque...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting '}'
+...          <!-- <div class="form-group row">
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...<!-- <div class="form-group row">
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+...              <label class="col-lg-12 col-form-label label">...
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+...    <label class="col-lg-12 col-form-label label">Décris no...
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..."col-lg-12 col-form-label label">Décris nous en quelques li...
+...                          ^~~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+...                <div class="col-lg-12">
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+...         <div class="col-lg-12">
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+...             <p id="description-error" class="form-error-mes...
+...                    ^~~~~~~~~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:45: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...      <p id="description-error" class="form-error-message" s...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+..."description-error" class="form-error-message" style="displa...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:45: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ror" class="form-error-message" style="display: none;">Merci...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+...m-error-message" style="display: none;">Merci de renseigner ...
+...                        ^~~~~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting ')'
+...               <div class="form-group row">
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...     <div class="form-group row">
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting ')'
+...              <label class="col-lg-12 col-form-label label">...
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting ')'
+...    <label class="col-lg-12 col-form-label label">Une photo ...
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..."col-lg-12 col-form-label label">Une photo qui illustre ce p...
+...                          ^~~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting ')'
+...                <div class="col-lg-12">
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:52: syntax error, unexpected tSTRING_BEG, expecting ')'
+...         <div class="col-lg-12">
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:54: syntax error, unexpected tIDENTIFIER, expecting ')'
+...             <small class="hint">La photo est obligatoire et...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:69: unterminated string meets end of file
+          end
+             ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:69: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/home/dashboard.html.erb:35: syntax error, unexpected ':', expecting ')'
+app/views/home/dashboard.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/views/home/dashboard.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:45: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:45: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:52: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/home/dashboard.html.erb:54: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:69: unterminated string meets end of file
+app/views/home/dashboard.html.erb:69: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:06:28 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  Rendered home/dashboard.html.erb within layouts/application (1.6ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting '}'
+...          <!-- <div class="form-group row">
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...<!-- <div class="form-group row">
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+...              <label class="col-lg-12 col-form-label label">...
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+...    <label class="col-lg-12 col-form-label label">Décris no...
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..."col-lg-12 col-form-label label">Décris nous en quelques li...
+...                          ^~~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+...                <div class="col-lg-12">
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+...         <div class="col-lg-12">
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+...             <p id="description-error" class="form-error-mes...
+...                    ^~~~~~~~~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:45: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...      <p id="description-error" class="form-error-message" s...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+..."description-error" class="form-error-message" style="displa...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:45: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+...ror" class="form-error-message" style="display: none;">Merci...
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+...m-error-message" style="display: none;">Merci de renseigner ...
+...                        ^~~~~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting ')'
+...               <div class="form-group row">
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+...     <div class="form-group row">
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting ')'
+...              <label class="col-lg-12 col-form-label label">...
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting ')'
+...    <label class="col-lg-12 col-form-label label">Une photo ...
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+..."col-lg-12 col-form-label label">Une photo qui illustre ce p...
+...                          ^~~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting ')'
+...                <div class="col-lg-12">
+...                            ^~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:52: syntax error, unexpected tSTRING_BEG, expecting ')'
+...         <div class="col-lg-12">
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:54: syntax error, unexpected tIDENTIFIER, expecting ')'
+...             <small class="hint">La photo est obligatoire et...
+...                           ^~~~
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:69: unterminated string meets end of file
+          end
+             ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:69: syntax error, unexpected end-of-input, expecting ')'
+          end
+             ^):
+  
+app/views/home/dashboard.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting '}'
+app/views/home/dashboard.html.erb:40: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:41: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:43: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:43: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:45: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:45: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:45: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:49: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:50: syntax error, unexpected tIDENTIFIER, expecting keyword_do or '{' or '('
+app/views/home/dashboard.html.erb:52: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:52: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/home/dashboard.html.erb:54: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/home/dashboard.html.erb:69: unterminated string meets end of file
+app/views/home/dashboard.html.erb:69: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:08:36 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (8.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 72ms (Views: 69.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 14:08:53 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (13.6ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.8ms)
+
+
+  
+ActionView::Template::Error (undefined method `marque' for #<Moto:0x00007f8de8fc02d8>):
+    29:                         <label class="col-lg-12 col-form-label label">Marque</label>
+    30: 
+    31:                         <div class="col-lg-12">
+    32:                             <%= f.input :marque,
+    33:                                 label: false,
+    34:                                 collection: @marques,
+    35:                                 label_method: lambda { |marques| "#{marques.nom}" }
+  
+app/views/home/dashboard.html.erb:32:in `block in _app_views_home_dashboard_html_erb___1273060267116260017_70123737961740'
+app/views/home/dashboard.html.erb:26:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123737961740'
+Started GET "/users/sign_in" for ::1 at 2019-12-27 14:08:59 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2019-12-27 14:08:59 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 51ms (Views: 49.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 14:09:45 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  Rendered home/dashboard.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:33: syntax error, unexpected ':', expecting ')'
+...                         label: false,
+...                              ^
+/home/jimmy/code/BBBRK/ez-rider/app/views/home/dashboard.html.erb:33: Can't assign to false
+...                  label: false,
+...                              ^):
+  
+app/views/home/dashboard.html.erb:33: syntax error, unexpected ':', expecting ')'
+app/views/home/dashboard.html.erb:33: Can't assign to false
+Started GET "/" for ::1 at 2019-12-27 14:09:53 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 54ms (Views: 52.3ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColMarqueToMotos (20191227131106)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "motos" ADD "marque" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20191227131106"]]
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_motos_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_motos_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/dashboard" for ::1 at 2019-12-27 14:12:59 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (16.1ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 100ms (Views: 63.7ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 14:36:01 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (192.0ms)
+Completed 500 Internal Server Error in 228ms (ActiveRecord: 3.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8e05811150>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123977219640'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:36:41 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (294.2ms)
+Completed 500 Internal Server Error in 299ms (ActiveRecord: 1.7ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8de8d39a50>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123736650360'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:37:36 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (195.4ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8df80b06c0>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123864295540'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:37:37 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (178.0ms)
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8de8a5b978>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123735155200'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:37:38 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (184.7ms)
+Completed 500 Internal Server Error in 190ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8e065ac1c0>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123984348660'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:37:38 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (188.8ms)
+Completed 500 Internal Server Error in 195ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8ddc021770>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123629121740'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:37:39 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (165.4ms)
+Completed 500 Internal Server Error in 170ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8e067d6748>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123985483960'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:37:58 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.3ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (376.9ms)
+Completed 500 Internal Server Error in 381ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_packs_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8e064461c8>
+Did you mean?  javascript_path):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_packs_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123983615480'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:38:25 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (184.9ms)
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 1.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8de8e6c3f0>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123737278600'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:38:26 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (176.1ms)
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8de8d01d30>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123736535980'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:38:27 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (203.2ms)
+Completed 500 Internal Server Error in 210ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8e0587bf78>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123977393620'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:38:28 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (173.8ms)
+Completed 500 Internal Server Error in 181ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8e06284a60>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123982695140'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:38:30 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.6ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (180.9ms)
+Completed 500 Internal Server Error in 186ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8e07ff3ab0>
+Did you mean?  javascript_path
+               javascript_tag):
+    65: </div>
+    66: 
+    67: 
+    68: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:68:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123998134920'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:38:52 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (166.9ms)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8e06963750>
+Did you mean?  javascript_path
+               javascript_tag):
+    64:     </div>
+    65: </div>
+    66: 
+    67: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:67:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123986256100'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:38:55 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (340.6ms)
+Completed 500 Internal Server Error in 347ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8e05aa2e28>
+Did you mean?  javascript_path
+               javascript_tag):
+    64:     </div>
+    65: </div>
+    66: 
+    67: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:67:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123978562700'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:43:19 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (160.0ms)
+Completed 500 Internal Server Error in 168ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8de8e0afd8>
+Did you mean?  javascript_path
+               javascript_tag):
+    64:     </div>
+    65: </div>
+    66: 
+    67: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:67:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123737079040'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:43:21 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (177.8ms)
+Completed 500 Internal Server Error in 184ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8de8becd78>
+Did you mean?  javascript_path
+               javascript_tag):
+    64:     </div>
+    65: </div>
+    66: 
+    67: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:67:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123735968720'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:43:22 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (172.7ms)
+Completed 500 Internal Server Error in 180ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8de94d9918>
+Did you mean?  javascript_path
+               javascript_tag):
+    64:     </div>
+    65: </div>
+    66: 
+    67: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:67:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123740647840'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:43:22 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (195.9ms)
+Completed 500 Internal Server Error in 199ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007f8e05813108>:0x00007f8ddc24a308>
+Did you mean?  javascript_path
+               javascript_tag):
+    64:     </div>
+    65: </div>
+    66: 
+    67: <%= javascript_pack_tag 'double_select' %>
+  
+app/views/home/dashboard.html.erb:67:in `_app_views_home_dashboard_html_erb___1273060267116260017_70123630253720'
+Started GET "/dashboard" for ::1 at 2019-12-27 14:43:41 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+[Webpacker] Compiling…
+[Webpacker] Compiled all packs in /home/jimmy/code/BBBRK/ez-rider/public/packs
+  Rendered home/dashboard.html.erb within layouts/application (3373.5ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 4757ms (Views: 4706.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2019-12-27 14:43:51 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (8.9ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 68ms (Views: 65.1ms | ActiveRecord: 0.8ms)
+
+

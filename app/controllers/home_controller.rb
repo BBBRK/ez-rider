@@ -5,8 +5,15 @@ class HomeController < ApplicationController
   def dashboard
 
       @motos = Moto.where(user_id: current_user)
+      @moto = Moto.new
+      @marques = Marque.all.order(nom: "ASC")
 
-      puts @motos
+  end
 
+  def double_select
+
+      return render json:{
+          
+      }
   end
 end

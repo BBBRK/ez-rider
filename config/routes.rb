@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     get '/dashboard', to: 'home#dashboard'
 
 
-    resources :motos do
+    resources :motos, only: [:new, :create, :update, :edit] do
 
 
     end
