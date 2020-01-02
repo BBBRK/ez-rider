@@ -18,4 +18,6 @@ class MotoController < ApplicationController
 
     end
 
+
+
 end
