@@ -1,0 +1,24 @@
+{
+  "application.js": "/packs/js/application-2181adcc3224cdc0c9c1.js",
+  "application.js.map": "/packs/js/application-2181adcc3224cdc0c9c1.js.map",
+  "double_select.js": "/packs/js/double_select-8e68109522d57f9a456b.js",
+  "double_select.js.map": "/packs/js/double_select-8e68109522d57f9a456b.js.map",
+  "entrypoints": {
+    "application": {
+      "js": [
+        "/packs/js/application-2181adcc3224cdc0c9c1.js"
+      ],
+      "js.map": [
+        "/packs/js/application-2181adcc3224cdc0c9c1.js.map"
+      ]
+    },
+    "double_select": {
+      "js": [
+        "/packs/js/double_select-8e68109522d57f9a456b.js"
+      ],
+      "js.map": [
+        "/packs/js/double_select-8e68109522d57f9a456b.js.map"
+      ]
+    }
+  }
+}

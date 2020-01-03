@@ -9,13 +9,12 @@
   </head>
 
   <body>
-
+      <%= render 'shared/navbar' %>
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
 
     <%= yield %>
-
-    <%= debug user_signed_in? %>
-    <%= debug session.to_hash %>
+    <%#= debug user_signed_in? %>
+    <%#= debug session.to_hash %>
   </body>
 </html>
