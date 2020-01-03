@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20191227131106) do
+ActiveRecord::Schema.define(version: 20200103132020) do
 
   create_table "marques", force: :cascade do |t|
     t.string "nom"
@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(version: 20191227131106) do
     t.integer "km"
     t.datetime "date_modif"
     t.integer "modele_id"
-    t.string "marque"
+    t.integer "marque_id"
     t.index ["user_id"], name: "index_motos_on_user_id"
   end
 

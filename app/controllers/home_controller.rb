@@ -15,14 +15,16 @@ class HomeController < ApplicationController
       @modeles = Modele.where(marque_id: params[:id])
 
       @modeles_name = []
+      @modeles_id = []
 
       @modeles.each do |modele|
           @modeles_name.push(modele.nom)
+          @modeles_id.push(modele.id)
       end
 
       return render json:{
-          modeles: @modeles_name
-
+          name: @modeles_name,
+          modele_id: @modeles_id
       }
   end
 

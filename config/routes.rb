@@ -12,7 +12,6 @@ Rails.application.routes.draw do
     resources :motos, only: [:new, :create, :update, :edit] do
 
 
-
     end
 
 end

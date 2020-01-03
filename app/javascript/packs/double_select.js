@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-let select = document.getElementById("moto_marque");
+let select = document.getElementById("moto_marque_id");
 let modeleSelect = document.getElementById("moto_modele");
 
 
@@ -21,8 +21,8 @@ function marque_select(){
         .then((data) => {
             let result = "";
 
-            for (var i = 0; i < data.modeles.length; i++) {
-                result += "<option value='" + data.modeles[i] + "'>" + data.modeles[i] + "</option>";
+            for (var i = 0; i < data.name.length; i++) {
+                result += "<option value='" + data.modele_id[i] + "'>" + data.name[i] + "</option>";
             }
 
             $("#moto_modele").html(result);
