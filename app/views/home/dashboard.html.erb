@@ -1,16 +1,25 @@
-<h1>DASHBOARD</h1>
 
-<div class="container text-center">
-    <% @motos.order(:id).each do |moto| %>
+<section class="section-userindex container">
+    <h1 class="vosmotos">Mes motos</h1>
+    <hr class="horizontal-line">
 
-        <p><%= moto.modele.nom %></p>
-        <p><%= moto.km %></p>
-        <p><%= moto.date_circu %></p>
-
-    <% end %>
-</div>
-
-<!-- <button type="button" class="btn btn-danger">Danger</button> -->
+    <div class="col-cards container">
+        <div class="row">
+            <% @motos.order(:id).each do |moto| %>
+            <div class="col col-lg-4 col-md-6 col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title"><%= moto.modele.nom %></h2>
+                        <hr class="horizontal-line hr-userindex">
+                        <a class="href-date" href="" class="card-text"><small class="small">Dernière mise à jour le <%= moto.date_modif %></small></a>
+                        <%= link_to "test", moto_detail_path(moto) %>
+                    </div>
+                </div>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</section>
 
 <button type="button" class="btn btn-new-moto" data-toggle="modal" data-target="#modal-ajout">Ajouter une moto</button>
 
@@ -24,53 +33,47 @@
                 <hr class="horizontal-line hr-modal-km">
                 <div class="modal-form">
                     <%= simple_form_for @moto, url: motos_path do |f| %>
+                        <div class="form-group row">
+                            <label class="col-lg-12 col-form-label label">Marque</label>
+                            <div class="col-lg-12">
+                                <%= f.input :marque_id,
+                                    label: false,
+                                    collection: @marques,
+                                    label_method: lambda { |marques| "#{marques.nom}" },
+                                    :input_html => {:class => "marque_name"}
+                                 %>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-12 col-form-label label">Modèle</label>
+                            <div class="col-lg-12">
+                                <select id="moto_modele" name="moto[modele]">
+                                    <!-- rempli avec ajax double_select.js -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-12 col-form-label label">Mise en circulation</label>
+                            <div class="col-lg-12">
+                                <%= f.input :date_circu, as: :date, html5: true, label: false %>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-lg-12 col-form-label label">Kilométrage</label>
+                            <div class="col-lg-12">
+                                <%= f.input :km,
+                                    label: false,
+                                    html5: true
+                                 %>
+                            </div>
+                        </div>
 
-                    <div class="form-group row">
-                        <label class="col-lg-12 col-form-label label">Marque</label>
-                        <div class="col-lg-12">
-                            <%= f.input :marque_id,
-                                label: false,
-                                collection: @marques,
-                                label_method: lambda { |marques| "#{marques.nom}" },
-                                :input_html => {:class => "marque_name"}
-                             %>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-lg-12 col-form-label label">Modèle</label>
-                        <div class="col-lg-12">
-
-                            <select id="moto_modele" name="moto[modele]">
-                                <!-- rempli avec ajax double_select.js -->
-                            </select>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-lg-12 col-form-label label">Mise en circulation</label>
-                        <div class="col-lg-12">
-                            <%= f.input :date_circu, as: :date, html5: true, label: false %>
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-lg-12 col-form-label label">Kilométrage</label>
-                        <div class="col-lg-12">
-                            <%= f.input :km,
-                                label: false,
-                                html5: true
-                             %>
-                        </div>
-                    </div>
-
-                    <div class="form-group row">
+                        <div class="form-group row">
                             <div class="col-lg-12">
                                 <%= f.submit "Sauvegarder", class: "btn btn-new-moto" %>
                             </div>
-                    </div>
-
-
-
+                        </div>
                     <% end %>
-
                 </div>
             </div>
         </div>

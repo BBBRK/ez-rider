@@ -13398,3 +13398,2002 @@ Completed 200 OK in 69ms (Views: 63.6ms | ActiveRecord: 1.4ms)
 
 
   [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" ORDER BY "motos"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2020-01-06 11:03:19 +0100
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7966.7ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+Completed 200 OK in 8193ms (Views: 8164.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-01-06 11:03:28 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2020-01-06 11:03:36 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (180.9ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 268ms (Views: 239.2ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-01-06 11:03:43 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RgnPoQo91B9Ar82l33V/60ynhuNpH5BcuOQbSfcpGRSeKdH2WUTrj4J3EFiFL+5rtosM/2UMLF+cpsV5+QoQ0A==", "user"=>{"email"=>"adresseadechet0212+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adresseadechet0212+1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 265ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2020-01-06 11:03:43 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.0ms)
+Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:03:50 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.4ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (609.1ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 711ms (Views: 658.5ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/double_select/3" for ::1 at 2020-01-06 11:04:00 +0100
+Processing by HomeController#double_select as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT "modeles".* FROM "modeles" WHERE "modeles"."marque_id" = ?[0m  [["marque_id", 3]]
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:05:38 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (72.7ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 1240ms (Views: 1196.1ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:05:41 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (15.0ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 77ms (Views: 71.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:05:41 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (16.8ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 72ms (Views: 66.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:05:42 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (13.9ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 60.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:05:42 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (15.8ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 71ms (Views: 66.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:13:57 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mMarque Load (0.5ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Marque Load (0.0ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Marque Load (0.0ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Marque Load (0.0ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Marque Load (0.0ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Marque Load (0.0ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Marque Load (0.0ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Moto Load (0.0ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."user_id" = 2 LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mCACHE Marque Load (0.0ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" ORDER BY "marques"."nom" ASC LIMIT ?[0m  [["LIMIT", 11]]
+  Rendered home/dashboard.html.erb within layouts/application (671.5ms)
+Completed 500 Internal Server Error in 676ms (ActiveRecord: 1.9ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `moto' for #<#<Class:0x0000560dac36d8e0>:0x00007fb6ca9e9d68>
+Did you mean?  @moto
+               @motos):
+    20:             <div class="col col-lg-4 col-md-6 col-12">
+    21:                 <div class="card">
+    22:                     <div class="card-body">
+    23:                         <h2 class="card-title"><%= moto.modele.nom %></h2>
+    24:                         <hr class="horizontal-line hr-userindex">
+    25:                         <a class="href-date" href="" class="card-text"><small class="small">Dernière mise à jour le <%= moto.date_modif %></small></a>
+    26:                     </div>
+  
+app/views/home/dashboard.html.erb:23:in `_app_views_home_dashboard_html_erb__3783709478851840725_70211530085500'
+Started GET "/dashboard" for ::1 at 2020-01-06 11:15:13 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (19.7ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 76ms (Views: 72.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:15:36 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.4ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (16.4ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 62.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:41:27 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (33.4ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 134ms (Views: 99.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:41:29 +0100
+  
+ActionController::RoutingError (uninitialized constant MotoController):
+  
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:269:in `const_get'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:269:in `block in constantize'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:267:in `each'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:267:in `inject'
+activesupport (5.1.7) lib/active_support/inflector/methods.rb:267:in `constantize'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:85:in `controller_class_for'
+actionpack (5.1.7) lib/action_dispatch/http/request.rb:78:in `controller_class'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:43:in `controller'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:29:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:41:48 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 20ms
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2020-01-06 11:41:55 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (26.0ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 129ms (Views: 90.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:41:57 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2020-01-06 11:42:04 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (15.0ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 218ms (Views: 214.4ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:42:33 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (28.1ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 116ms (Views: 80.1ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:42:33 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (14.9ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 78ms (Views: 74.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:43:36 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (27.9ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 117ms (Views: 79.8ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:43:37 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ArgumentError (wrong number of arguments (given 0, expected 1)):
+  
+app/controllers/motos_controller.rb:23:in `detail'
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:43:44 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 20ms
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2020-01-06 11:43:56 +0100
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 27ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:43:58 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (28.4ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 94ms (Views: 76.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:43:59 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.4ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (18.0ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 82ms (Views: 76.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:44:24 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2020-01-06 11:44:26 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (19.8ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 83ms (Views: 78.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:44:26 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (19.9ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 76ms (Views: 71.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:44:27 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (14.4ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:44:28 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2020-01-06 11:44:34 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.5ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (23.5ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 88ms (Views: 84.0ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:44:39 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2020-01-06 11:44:40 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (17.2ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 72ms (Views: 69.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:44:40 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (14.9ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 83ms (Views: 78.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 11:44:42 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (17.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 72ms (Views: 65.9ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-01-06 11:44:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/motos/2/detail" for ::1 at 2020-01-06 11:44:44 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"2"}
+Completed 406 Not Acceptable in 21ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/dashboard" for ::1 at 2020-01-06 11:44:46 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (19.1ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 70ms (Views: 66.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:44:47 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/739dea5fab46b0b3d2539bc10f01757d" for ::1 at 2020-01-06 11:45:25 +0100
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:51:58 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 23ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:51:59 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:51:59 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 22ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:52:00 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:52:00 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+Completed 406 Not Acceptable in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (MotosController#detail is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.1.7) lib/action_controller/metal/implicit_render.rb:53:in `default_render'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.1.7) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:186:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.1.7) lib/active_support/callbacks.rb:131:in `run_callbacks'
+actionpack (5.1.7) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `block in instrument'
+activesupport (5.1.7) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.1.7) lib/active_support/notifications.rb:166:in `instrument'
+actionpack (5.1.7) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.1.7) lib/action_controller/metal/params_wrapper.rb:252:in `process_action'
+activerecord (5.1.7) lib/active_record/railties/controller_runtime.rb:22:in `process_action'
+actionpack (5.1.7) lib/abstract_controller/base.rb:124:in `process'
+actionview (5.1.7) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.7) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.7) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.7) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.7) lib/action_dispatch/routing/route_set.rb:844:in `call'
+warden (1.2.8) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.8) lib/warden/manager.rb:34:in `catch'
+warden (1.2.8) lib/warden/manager.rb:34:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.7) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.7) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.7) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 11:52:36 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  Rendering motos/detail.html.erb within layouts/application
+  Rendered motos/detail.html.erb within layouts/application (0.3ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 82ms (Views: 80.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 12:08:06 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.5ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.5ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (35.3ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 176ms (Views: 127.7ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 12:08:06 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (16.9ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 81ms (Views: 74.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 12:08:08 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (15.9ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+Completed 404 Not Found in 18ms (ActiveRecord: 15.9ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Moto with 'id'=):
+  
+app/controllers/motos_controller.rb:25:in `detail'
+Started PUT "/__web_console/repl_sessions/cd04564ff1e904153f511aa3656dd137" for ::1 at 2020-01-06 12:08:41 +0100
+Started PUT "/__web_console/repl_sessions/cd04564ff1e904153f511aa3656dd137" for ::1 at 2020-01-06 12:08:42 +0100
+Started PUT "/__web_console/repl_sessions/cd04564ff1e904153f511aa3656dd137" for ::1 at 2020-01-06 12:08:45 +0100
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 12:08:58 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  Rendered motos/detail.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (25.6ms)
+Completed 200 OK in 113ms (Views: 93.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 12:12:04 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  Rendered motos/detail.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 14:27:34 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  Rendered motos/detail.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 71ms (Views: 67.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 14:28:31 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  Rendered motos/detail.html.erb within layouts/application (8.4ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `marque' for #<Moto:0x00007fb6ca7e1340>
+Did you mean?  marque_id):
+    1: <section class="section-userindex container">
+    2: 
+    3:     <h1 class="vosmotos"><%= @moto.marque.nom %></h1>
+    4:     <hr class="horizontal-line hr-detail">
+    5: 
+    6:     <div class="container-fluid">
+  
+app/views/motos/detail.html.erb:3:in `_app_views_motos_detail_html_erb___2664103197069315635_70211529015020'
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 14:28:55 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.4ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered motos/detail.html.erb within layouts/application (14.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (22.2ms)
+Completed 200 OK in 104ms (Views: 100.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 14:29:30 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered motos/detail.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error ():
+    1: <section class="section-userindex container">
+    2: 
+    3:     <h1 class="vosmotos"><%= @moto.modele.nom %></h1>
+    4:     <%= raise %>
+    5:     <hr class="horizontal-line hr-detail">
+    6: 
+    7:     <div class="container-fluid">
+  
+app/views/motos/detail.html.erb:4:in `_app_views_motos_detail_html_erb___2664103197069315635_70211519651940'
+Started PUT "/__web_console/repl_sessions/44bbc17b078c7a6a5482ad7e7146831f" for ::1 at 2020-01-06 14:29:36 +0100
+Started PUT "/__web_console/repl_sessions/44bbc17b078c7a6a5482ad7e7146831f" for ::1 at 2020-01-06 14:29:37 +0100
+Started PUT "/__web_console/repl_sessions/44bbc17b078c7a6a5482ad7e7146831f" for ::1 at 2020-01-06 14:29:51 +0100
+Started PUT "/__web_console/repl_sessions/44bbc17b078c7a6a5482ad7e7146831f" for ::1 at 2020-01-06 14:29:52 +0100
+Started PUT "/__web_console/repl_sessions/44bbc17b078c7a6a5482ad7e7146831f" for ::1 at 2020-01-06 14:30:02 +0100
+Started PUT "/__web_console/repl_sessions/44bbc17b078c7a6a5482ad7e7146831f" for ::1 at 2020-01-06 14:30:03 +0100
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Started PUT "/__web_console/repl_sessions/44bbc17b078c7a6a5482ad7e7146831f" for ::1 at 2020-01-06 14:30:08 +0100
+Started PUT "/__web_console/repl_sessions/44bbc17b078c7a6a5482ad7e7146831f" for ::1 at 2020-01-06 14:30:10 +0100
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 14:30:43 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered motos/detail.html.erb within layouts/application (3.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 200 OK in 66ms (Views: 62.3ms | ActiveRecord: 0.8ms)
+
+
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[33mUPDATE "marques" SET "nom" = ? WHERE "marques"."id" = ?[0m  [["nom", "Ducati"], ["id", 1]]
+  [1m[35m (228.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/motos/1/detail" for ::1 at 2020-01-06 14:31:20 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered motos/detail.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 62ms (Views: 59.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-06 14:31:24 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (20.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 83ms (Views: 78.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/motos/5/detail" for ::1 at 2020-01-06 14:31:30 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"5"}
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered motos/detail.html.erb within layouts/application (4.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/motos/4/detail" for ::1 at 2020-01-06 14:31:36 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"4"}
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered motos/detail.html.erb within layouts/application (3.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 58ms (Views: 53.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/motos/7/detail" for ::1 at 2020-01-06 14:31:39 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"7"}
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered motos/detail.html.erb within layouts/application (3.1ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 57ms (Views: 54.6ms | ActiveRecord: 0.7ms)
+
+

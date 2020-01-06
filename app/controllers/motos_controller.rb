@@ -20,4 +20,13 @@ class MotosController < ApplicationController
 
     end
 
+    def detail
+        
+        @moto = Moto.find(params[:moto_id])
+    end
+
+    def delete
+
+    end
+
 end
