@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
 
     resources :motos, only: [:new, :create, :update, :edit] do
-
+        get '/detail', to: 'motos#detail'
 
     end
 
