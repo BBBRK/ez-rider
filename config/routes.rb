@@ -11,6 +11,8 @@ Rails.application.routes.draw do
 
     resources :motos, only: [:new, :create, :update, :edit] do
         get '/detail', to: 'motos#detail'
+        patch '/update_km', to: 'motos#update_km'
+        delete '/destroy', to: 'motos#destroy'
 
     end
 
