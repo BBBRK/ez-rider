@@ -281,6 +281,7 @@ small{
 .small{
     font-family: 'Play', sans-serif;
     font-size: 0.8rem;
+    text-decoration: none;
 }
 
 .hr-userindex{
@@ -299,6 +300,11 @@ small{
 
 .href-date{
     text-decoration: none !important;
+    color: #b8b2a6;
+}
+.href-date:hover{
+    text-decoration: none !important;
+    color: #b8b2a6;
 }
 
 /* ------------------------------------------- */
@@ -306,6 +312,10 @@ small{
 /* ******** detail_moto.php ******** */
 
 /* upload photo button */
+
+.maj-km{
+    display: none;
+}
 
 .upload-btn-wrapper {
     position: relative;

@@ -36,14 +36,240 @@
 
             <div class="col col-lg-3 col-md-12  col-sm-12 col-xs-12">
                 <h4 class="detail-titre">Chassis :</h4>
-                    <p class="detail">
+                <p class="detail">
                                Cadre : Treillis tubulaire en acier
                                Réservoir : 15 litres
                                Hauteur de selle : 800 mm
                                Empattement : 1450 mm
                                Poids à sec : 167 kg
-                    </p>
+                </p>
             </div>
         </div>
     </div>
 </section>
+
+<section>
+    <h1 class="vosmotos">Votre moto</h1>
+    <hr class="horizontal-line hr-votre-moto">
+    <nav class="navbar navbar-expand-lg navbar-dark " id="navbar">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+          <ul class="navbar-nav mx-auto">
+              <li class="nav_item">
+                  <a class="nav-link nav_detail" id="suivi" onclick="sante();">Santé moto</a>
+              </li>
+
+              <li class="nav_item">
+                  <a class="nav-link nav_detail" onclick="km();">Mise à jour km</a>
+              </li>
+              <li class="nav_item">
+                  <a class="nav-link nav_detail" onclick="showModalNewEntretien();">Ajouter entretien</a>
+              </li>
+              <li class="nav_item">
+                  <a class="nav-link nav_detail" id="historique" href="#historique" onclick="historique();">Historique</a>
+              </li>
+
+              <li class="nav_item">
+                  <%= link_to "Supprimer moto", moto_destroy_path, method: "delete", class: "nav-link nav_detail", data: {confirm: "Veux-tu vraiment supprimer cette moto ?"} %>
+              </li>
+          </ul>
+      </div>
+    </nav>
+
+    <div class="moto-sante" id="sante-moto">
+        <h3 class="kilometre">Kilomètrage : <%= @moto.km %> km</h3>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col col-lg-12 col-detail">
+                    <div class="row">
+                        <div class="col col-lg-4">
+                            <div>
+                                <p class="detail">Usure théorique pneu avant:</p>
+                            </div>
+                            <div>
+                                <p class="detail">Usure théorique pneu arrière:</p>
+                            </div>
+                            <div>
+                                <p class="detail">Usure théorique kit chaine:</p>
+                            </div>
+                            <div>
+                                <p class="detail">Vidange:</p>
+                            </div>
+                            <div>
+                                <p class="detail">Usure théorique plaquettes avant:</p>
+                            </div>
+                            <div>
+                                <p class="detail">Usure théorique plaquettes arrière:</p>
+                            </div>
+                            <div>
+                                <p class="detail">Purge liquide de frein:</p>
+                            </div>
+                        </div>
+
+                        <div class="col col-lg-8">
+                            <!-- <?php
+                            // VOIR POUR ENTRER CA DANS LE CONTROLLER
+                            $data = array($pneuAv, $pneuArr, $kitChaine, $vid, $plaqAv, $plaqArr, $purge);
+                            $var = [];
+                            for ($i = 0; $i < count($data); $i++) {
+                                if ($data[$i] >= 100) {
+                                    array_push($var, 1);
+                                }
+                                else {
+                                    array_push($var, "0.".$data[$i]);
+                                }
+                                $var[$i] = (float)$var[$i];
+                            }
+                            ?> -->
+                            <div class="row">
+                                <div class="col col-lg-9 col-progressbar">
+                                    <div class="progress">
+                                        <div class="progress-bar test-0" id="0" role="progressbar" style="opacity: <?php echo $var[0]; ?>" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><?php echo $pneuAv; ?> %</div>
+                                    </div>
+                                </div>
+
+                                <!-- <?php if ($pneuAv >= 80) { ?> -->
+                                    <div class="col col-lg-3 progress-icone">
+                                        <button type="button" class="btn btn-secondary myPop blink" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="L'usure théorique de votre pneu avant est élevé, nous vous conseillons d'effectuer un contrôle visuel. Le prix moyen d'un changement de pneu avant est de 120€."><i class="fas fa-exclamation"></i></button>
+                                    </div>
+                                <!-- <?php } ?> -->
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-lg-9 col-progressbar">
+                                    <div class="progress">
+                                        <div class="progress-bar test-1" id="1" role="progressbar" style="opacity: <?php echo $var[1]; ?>" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><?php echo $pneuArr; ?> %</div>
+                                    </div>
+                                </div>
+
+                                <!-- <?php if ($pneuArr >= 80) { ?> -->
+                                    <div class="col col-lg-3 progress-icone">
+                                        <button type="button" class="btn btn-secondary myPop blink" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="L'usure théorique de votre pneu arrière est élevé, nous vous conseillons d'effectuer un contrôle visuel. Le prix moyen d'un changement de pneu avant est de 150€."><i class="fas fa-exclamation"></i></button>
+                                    </div>
+                                <!-- <?php } ?> -->
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-lg-9 col-progressbar">
+                                    <div class="progress">
+                                        <div class="progress-bar test-2" id="2" role="progressbar" style="opacity: <?php echo $var[2]; ?>" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><?php echo $kitChaine; ?> %</div>
+                                    </div>
+                                </div>
+
+                                <!-- <?php if ($kitChaine >= 80) { ?> -->
+                                    <div class="col col-lg-3 progress-icone">
+                                        <button type="button" class="btn btn-secondary myPop blink" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="L'usure théorique de votre kit chaine est élevé, nous vous conseillons d'effectuer un contrôle visuel. Le prix moyen d'un changement de pneu avant est de 200€."><i class="fas fa-exclamation"></i></button>
+                                    </div>
+                                <!-- <?php } ?> -->
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-lg-9 col-progressbar">
+                                    <div class="progress">
+                                        <div class="progress-bar test-3" id="3" role="progressbar" style="opacity: <?php echo $var[3]; ?>" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><?php echo $vid; ?> %</div>
+                                    </div>
+                                </div>
+
+                                <!-- <?php if ($vid >= 80) { ?> -->
+                                    <div class="col col-lg-3 progress-icone">
+                                        <button type="button" class="btn btn-secondary myPop blink" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Votre huile moteur arrive à péremption, nous vous conseillons d'effectuer une vidange. Le prix moyen d'une vidange avec changement du filtre à huile est de 70€."><i class="fas fa-exclamation"></i></button>
+                                    </div>
+                                <!-- <?php } ?> -->
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-lg-9 col-progressbar">
+                                    <div class="progress">
+                                        <div class="progress-bar test-4" id="4" role="progressbar" style="opacity: <?php echo $var[4]; ?>" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><?php echo $plaqAv; ?> %</div>
+                                    </div>
+                                </div>
+
+                                <!-- <?php if ($plaqAv >= 80) { ?> -->
+                                    <div class="col col-lg-3 progress-icone">
+                                        <button type="button" class="btn btn-secondary myPop blink" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="L'usure théorique de vos plaquettes avant est élevé, nous vous conseillons d'effectuer un contrôle visuel. Le prix moyen d'un changement de plaquette avant est de 90€."><i class="fas fa-exclamation"></i></button>
+                                    </div>
+                                <!-- <?php } ?> -->
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-lg-9 col-progressbar">
+                                    <div class="progress">
+                                        <div class="progress-bar test-5" id="5" role="progressbar" style="opacity: <?php echo $var[5]; ?>" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><?php echo $plaqArr; ?> %</div>
+                                    </div>
+                                </div>
+
+                                <!-- <?php if ($plaqArr >= 80) { ?> -->
+                                    <div class="col col-lg-3 progress-icone">
+                                        <button type="button" class="btn btn-secondary myPop blink" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="L'usure théorique de vos plaquettes arrière est élevé, nous vous conseillons d'effectuer un contrôle visuel. Le prix moyen d'un changement de plaquette arrière est de 40€."><i class="fas fa-exclamation"></i></button>
+                                    </div>
+                                <!-- <?php } ?> -->
+                            </div>
+
+                            <div class="row">
+                                <div class="col col-lg-9 col-progressbar">
+                                    <div class="progress">
+                                        <div class="progress-bar test-6" id="6" role="progressbar" style="opacity: <?php echo $var[6]; ?>" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><?php echo $purge; ?> %</div>
+                                    </div>
+                                </div>
+
+                                <!-- <?php if ($purge >= 80) { ?> -->
+                                    <div class="col col-lg-3 progress-icone">
+                                        <button type="button" class="btn btn-secondary myPop blink" data-container="body" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Votre liquide de frein arrive à péremption, Nous vous conseillons d'effectuer une vidange. Le prix moyen d'une purge est de 40€."><i class="fas fa-exclamation"></i></button>
+                                    </div>
+                                <!-- <?php } ?> -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="maj-km" id="maj-km">
+        <h3 class="kilometre">Kilomètrage : <%= @moto.km %> km</h3>
+
+        <div class="modal-form">
+            <%= simple_form_for @moto, url: moto_update_km_path do |f| %>
+                <div class="form-group row">
+                    <label class="col-lg-12 col-form-label label">Nouveau kilométrage</label>
+                    <div class="col-lg-12">
+                        <%= f.input :km,
+                            label: false
+                         %>
+                    </div>
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <%= f.submit "Sauvegarder", class: "btn btn-new-moto" %>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+
+
+    </div>
+
+
+
+    <script>
+        divSante = document.getElementById('sante-moto');
+        divKm = document.getElementById('maj-km');
+        function sante(){
+            divSante.style.display = "block";
+            divKm.style.display = "none";
+        }
+
+        function km(){
+            divSante.style.display = "none";
+            divKm.style.display = "block";
+        }
+    </script>
+</section>
+
+<%#= javascript_pack_tag 'sante' %>

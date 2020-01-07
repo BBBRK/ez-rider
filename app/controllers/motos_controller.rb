@@ -1,8 +1,6 @@
 class MotosController < ApplicationController
-    def index
 
-
-    end
+     before_action :set_moto, except: [:new, :create, :update ]
 
     def create
 
@@ -17,15 +15,30 @@ class MotosController < ApplicationController
         moto.save!
 
         redirect_to dashboard_path
-
     end
 
     def detail
-        
-        @moto = Moto.find(params[:moto_id])
+
     end
 
-    def delete
+    def update_km
+
+        @moto.km = params[:moto][:km]
+        @moto.save!
+
+        redirect_to moto_detail_path(@moto)
+    end
+
+    def destroy
+
+        @moto.delete
+        redirect_to dashboard_path
+    end
+
+    private
+
+    def set_moto
+        @moto = Moto.find(params[:moto_id])
 
     end
 
