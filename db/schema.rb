@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200103132020) do
+ActiveRecord::Schema.define(version: 20200107163804) do
+
+  create_table "entretiens", force: :cascade do |t|
+    t.string "description"
+    t.datetime "date"
+    t.integer "km"
+    t.string "prix"
+    t.integer "moto_id"
+    t.integer "operation_id"
+  end
 
   create_table "marques", force: :cascade do |t|
     t.string "nom"
@@ -29,6 +38,10 @@ ActiveRecord::Schema.define(version: 20200103132020) do
     t.integer "modele_id"
     t.integer "marque_id"
     t.index ["user_id"], name: "index_motos_on_user_id"
+  end
+
+  create_table "operations", force: :cascade do |t|
+    t.string "type"
   end
 
   create_table "users", force: :cascade do |t|
