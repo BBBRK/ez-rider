@@ -17343,3 +17343,220 @@ Migrating to AddFkToEntretiens (20200107163804)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+Started GET "/" for ::1 at 2020-01-08 12:33:49 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1547.9ms)
+  Rendered shared/_navbar.html.erb (3.9ms)
+Completed 200 OK in 1665ms (Views: 1657.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-01-08 12:33:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.1.7) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.7) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.7) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.7) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.7) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.7) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+webpacker (4.0.7) lib/webpacker/dev_server_proxy.rb:29:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (5.1.7) lib/rails/engine.rb:522:in `call'
+puma (3.12.2) lib/puma/configuration.rb:227:in `call'
+puma (3.12.2) lib/puma/server.rb:674:in `handle_request'
+puma (3.12.2) lib/puma/server.rb:476:in `process_client'
+puma (3.12.2) lib/puma/server.rb:334:in `block in run'
+puma (3.12.2) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/users/sign_in" for ::1 at 2020-01-08 12:34:17 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (18.4ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 87ms (Views: 64.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2020-01-08 12:34:29 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wP4lrqUWLaRAdrNLdABe/IYYoO9XQZVemCvPlRuEifpQT3Qq4rRCT/x1Vrxw2KqeFqAqxHku0Bjea5PLVkhD5A==", "user"=>{"email"=>"adresseadechet0212+1@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "adresseadechet0212+1@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 149ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2020-01-08 12:34:29 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 66ms (Views: 64.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-08 12:34:36 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.6ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 2 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.6ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mCACHE Modele Load (0.0ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (75.9ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 168ms (Views: 144.3ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/motos/2/detail" for ::1 at 2020-01-08 12:34:37 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"2"}
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.4ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered motos/detail.html.erb within layouts/application (7.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 83ms (Views: 78.7ms | ActiveRecord: 1.1ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (202.8ms)[0m  [1m[32mINSERT INTO "operations" ("type") VALUES (?)[0m  [["type", "Vidange"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "operations" ("type") VALUES (?)[0m  [["type", "Purge liquide de frein"]]
+  [1m[35m (205.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "operations" ("type") VALUES (?)[0m  [["type", "Pneu avant"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (202.5ms)[0m  [1m[32mINSERT INTO "operations" ("type") VALUES (?)[0m  [["type", "Pneu arrière"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "operations" SET "type" = ? WHERE "operations"."id" = ?[0m  [["type", "Kit chaine"], ["id", 4]]
+  [1m[35m (65.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "operations" SET "type" = ? WHERE "operations"."id" = ?[0m  [["type", "Pneu arrière"], ["id", 4]]
+  [1m[35m (3.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "operations" ("type") VALUES (?)[0m  [["type", "Kit chaine"]]
+  [1m[35m (205.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "operations" ("type") VALUES (?)[0m  [["type", "Plaquettes de frein avant"]]
+  [1m[35m (205.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "operations" ("type") VALUES (?)[0m  [["type", "Plaquettes de frein arrière"]]
+  [1m[35m (154.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "operations" ("type") VALUES (?)[0m  [["type", "Bougies"]]
+  [1m[35m (205.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "operations" ("type") VALUES (?)[0m  [["type", "Révision constructeur"]]
+  [1m[35m (205.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "operations" ("type") VALUES (?)[0m  [["type", "Autre ..."]]
+  [1m[35m (204.8ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/motos/2/detail" for ::1 at 2020-01-08 12:46:21 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"2"}
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered motos/detail.html.erb within layouts/application (6.8ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 79ms (Views: 75.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/motos/2/detail" for ::1 at 2020-01-08 13:08:20 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"2"}
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered motos/detail.html.erb within layouts/application (7.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 61ms (Views: 58.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/motos/2/detail" for ::1 at 2020-01-08 13:11:01 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"2"}
+  [1m[36mMoto Load (0.1ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.1ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_sante.html.erb (0.6ms)
+  Rendered motos/detail.html.erb within layouts/application (18.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (22.1ms)
+Completed 200 OK in 111ms (Views: 94.1ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/motos/2/detail" for ::1 at 2020-01-08 13:13:04 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"2"}
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.3ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_sante.html.erb (1.4ms)
+  Rendered shared/_km.html.erb (4.0ms)
+  Rendered motos/detail.html.erb within layouts/application (12.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 81ms (Views: 77.5ms | ActiveRecord: 0.9ms)
+
+
+Started PATCH "/motos/2/update_km" for ::1 at 2020-01-08 13:13:12 +0100
+Processing by MotosController#update_km as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yKm7vo9Tk78nQKJ+z9vIzBWb08nxJ6YDNses5mLw7KxllZa3NTcXNJFnPcEiHCrM3GJIXLt3vp6iQTHEZVfcag==", "moto"=>{"km"=>"14998"}, "commit"=>"Sauvegarder", "moto_id"=>"2"}
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.9ms)[0m  [1m[33mUPDATE "motos" SET "km" = ? WHERE "motos"."id" = ?[0m  [["km", 14998], ["id", 2]]
+  [1m[35m (201.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/motos/2/detail
+Completed 302 Found in 215ms (ActiveRecord: 203.3ms)
+
+
+Started GET "/motos/2/detail" for ::1 at 2020-01-08 13:13:12 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"2"}
+  [1m[36mMoto Load (0.2ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.1ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_sante.html.erb (0.8ms)
+  Rendered shared/_km.html.erb (2.8ms)
+  Rendered motos/detail.html.erb within layouts/application (8.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 82ms (Views: 78.1ms | ActiveRecord: 0.8ms)
+
+

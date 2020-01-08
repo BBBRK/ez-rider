@@ -14,6 +14,13 @@ Rails.application.routes.draw do
         patch '/update_km', to: 'motos#update_km'
         delete '/destroy', to: 'motos#destroy'
 
+
+        resources :entretiens, only: [:new, :create, :update, :edit] do
+
+
+
+        end
+
     end
 
 end
