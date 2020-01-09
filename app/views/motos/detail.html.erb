@@ -66,10 +66,10 @@
                   <a class="nav-link nav_detail" onclick="km();">Mise à jour km</a>
               </li>
               <li class="nav_item">
-                  <a class="nav-link nav_detail" onclick="showModalNewEntretien();">Ajouter entretien</a>
+                  <a class="nav-link nav_detail" onclick="entretien();">Ajouter entretien</a>
               </li>
               <li class="nav_item">
-                  <a class="nav-link nav_detail" id="historique" href="#historique" onclick="historique();">Historique</a>
+                  <a class="nav-link nav_detail" onclick="historique();">Historique</a>
               </li>
 
               <li class="nav_item">
@@ -81,6 +81,7 @@
 
     <%= render 'shared/sante' %>
     <%= render 'shared/km' %>
+    <%= render 'shared/entretien' %>
     <%= render 'shared/historique' %>
 
 
@@ -91,15 +92,37 @@
     <script>
         divSante = document.getElementById('sante-moto');
         divKm = document.getElementById('maj-km');
+        divEntretien = document.getElementById('entretien');
+        divHistorique = document.getElementById('historique');
+
         function sante(){
             divSante.style.display = "block";
             divKm.style.display = "none";
+            divEntretien.style.display = "none";
+            divHistorique.style.display = "none";
         }
 
         function km(){
             divSante.style.display = "none";
             divKm.style.display = "block";
+            divEntretien.style.display = "none";
+            divHistorique.style.display = "none";
         }
+
+        function entretien(){
+            divSante.style.display = "none";
+            divKm.style.display = "none";
+            divEntretien.style.display = "block";
+            divHistorique.style.display = "none";
+        }
+
+        function historique(){
+            divSante.style.display = "none";
+            divKm.style.display = "none";
+            divEntretien.style.display = "none";
+            divHistorique.style.display = "block";
+        }
+
     </script>
 </section>
 

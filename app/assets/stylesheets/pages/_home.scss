@@ -313,8 +313,38 @@ small{
 
 /* upload photo button */
 
+.aaaa{
+    height: 150px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+}
+.bbbb{
+    height: 475px;
+    width: 290px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-color: white;
+}
+
 .maj-km{
     display: none;
+}
+
+.entretien{
+    display: none;
+}
+
+.historique{
+    display: none;
+}
+
+.btn-historique{
+    background-color: #393e46;
+    border: none;
 }
 
 .upload-btn-wrapper {
