@@ -19,6 +19,11 @@ class MotosController < ApplicationController
 
     def detail
 
+        @operations = Operation.all.order(id: "ASC")
+
+        puts @operations
+        @entretien = Entretien.new
+
     end
 
     def update_km

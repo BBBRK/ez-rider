@@ -2,11 +2,47 @@
     <h3 class="kilometre">Kilomètrage : <%= @moto.km %> km</h3>
 
     <div class="modal-form">
-        <%= simple_form_for @moto, url: moto_update_km_path do |f| %>
+        <%= simple_form_for @entretien, url: moto_entretiens_path do |f| %>
             <div class="form-group row">
-                <label class="col-lg-12 col-form-label label">Nouveau kilométrage</label>
+                <label class="col-lg-12 col-form-label label">Type</label>
+                <div class="col-lg-12">
+                    <%= f.input :operation_id,
+                        label: false,
+                        collection: @operations,
+                        label_method: lambda { |operation| "#{operation.nom}" }
+                     %>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-lg-12 col-form-label label">Date</label>
+                <div class="col-lg-12">
+                    <%= f.input :date, as: :date, html5: true, label: false %>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-lg-12 col-form-label label">Kilomètrage</label>
                 <div class="col-lg-12">
                     <%= f.input :km,
+                        label: false
+                     %>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-lg-12 col-form-label label">Description</label>
+                <div class="col-lg-12">
+                    <%= f.input :description,
+                        label: false
+                     %>
+                </div>
+            </div>
+
+            <div class="form-group row">
+                <label class="col-lg-12 col-form-label label">Prix</label>
+                <div class="col-lg-12">
+                    <%= f.input :prix,
                         label: false
                      %>
                 </div>
