@@ -311,8 +311,6 @@ small{
 
 /* ******** detail_moto.php ******** */
 
-/* upload photo button */
-
 .aaaa{
     height: 150px;
     width: 150px;
@@ -329,6 +327,39 @@ small{
 
     background-color: white;
 }
+
+/* modal detail histo */
+
+.histo-name{
+
+}
+
+.histo-date{
+    font-size: 1rem;
+    color: #b8b2a6;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.histo-description{
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.histo-price{
+    text-align: right;
+}
+
+.histo-footer{
+    padding: 0 15px 0 0;
+    border-top: none;
+}
+
+
+
+/* upload photo button */
+
+
 
 .maj-km{
     display: none;

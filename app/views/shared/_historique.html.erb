@@ -11,7 +11,7 @@
 
                         </div>
                         <hr class="horizontal-line hr-userindex">
-                        <button type="button" class="btn-historique" data-toggle="modal" data-target="#entretien-<%= historique.id %>"><small class="small">Le <%= historique.date %></small></button>
+                        <button type="button" class="btn-historique" data-toggle="modal" data-target="#entretien-<%= historique.id %>"><small class="small">Le <%= historique.date.strftime('%d-%m-%Y') %></small></button>
                     </div>
                 </div>
             </div>
@@ -29,18 +29,21 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="bbbb">
-
+                                <!-- img -->
                             </div>
 
                         </div>
                         <div class="col-md-8">
-                            <h3><%= histo.operation.nom %></h3>
-                            <hr class="horizontal-line hr-userindex">
-                            <p>Réalisé le <%= histo.date %></p>
-                            <p><%= histo.description %></p>
-                            <p><%= histo.prix %>€</p>
+                            <h3 class="histo-name"><%= histo.operation.nom %></h3>
+                            <hr class="horizontal-line">
+                            <p class="histo-date">Réalisé le <%= histo.date.strftime('%d-%m-%Y') %></p>
+                            <p class="histo-description"><%= histo.description %></p>
+
                         </div>
                     </div>
+                </div>
+                <div class="modal-footer histo-footer">
+                    <p class="histo-price"><%= histo.prix %>€</p>
                 </div>
             </div>
         </div>

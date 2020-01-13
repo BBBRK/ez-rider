@@ -11,7 +11,7 @@
                     <div class="card-body">
                         <h2 class="card-title"><%= moto.modele.nom %></h2>
                         <hr class="horizontal-line hr-userindex">
-                        <small class="small">Dernière mise à jour le </small><%= link_to moto.date_modif, moto_detail_path(moto), :class => "small href-date" %>
+                        <small class="small">Mise à jour le </small><%= link_to moto.date_modif.strftime('%d-%m-%Y'), moto_detail_path(moto), :class => "small href-date" %>
                     </div>
                 </div>
             </div>
