@@ -59,3 +59,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.11.2'
 gem 'webpacker'
+
+group :production do
+    gem 'pg', '~> 0.21'
+end
