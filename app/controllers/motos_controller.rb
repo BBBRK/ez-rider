@@ -20,9 +20,8 @@ class MotosController < ApplicationController
     def detail
 
         @operations = Operation.all.order(id: "ASC")
-
-        puts @operations
         @entretien = Entretien.new
+        @historique = Entretien.all.where(moto_id: @moto.id)
 
     end
 
@@ -43,8 +42,8 @@ class MotosController < ApplicationController
     private
 
     def set_moto
-        @moto = Moto.find(params[:moto_id])
 
+        @moto = Moto.find(params[:moto_id])
     end
 
 end
