@@ -90,5 +90,5 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Allow connections to local server.
-    config.hosts.clear
+    # config.hosts.clear
 end
