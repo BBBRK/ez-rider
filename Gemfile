@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.5.7'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -17,9 +18,6 @@ gem 'puma', '~> 3.7'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
-gem 'pg'
-
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -64,6 +62,7 @@ gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.11.2'
 gem 'webpacker'
 gem 'rails-i18n'
+gem 'pg'
 
 # group :production do
 #     gem 'pg', '~> 0.21'

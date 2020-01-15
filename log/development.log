@@ -22927,3 +22927,263 @@ FOREIGN KEY ("user_id")
   [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mMarque Load (0.4ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" LIMIT $1[0m  [["LIMIT", 11]]
   [1m[36mOperation Load (0.8ms)[0m  [1m[34mSELECT  "operations".* FROM "operations" LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:26 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (1.1ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" IS NULL ORDER BY "motos"."id" ASC[0m
+  [1m[36mMarque Load (0.7ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (420.1ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 1542ms (Views: 1495.6ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:27 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" IS NULL ORDER BY "motos"."id" ASC[0m
+  [1m[36mMarque Load (0.5ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (20.2ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 80ms (Views: 76.2ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:28 +0100
+Processing by HomeController#dashboard as HTML
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" IS NULL ORDER BY "motos"."id" ASC[0m
+  [1m[36mMarque Load (0.6ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (13.9ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 67ms (Views: 63.6ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:28 +0100
+Processing by HomeController#dashboard as HTML
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" IS NULL ORDER BY "motos"."id" ASC[0m
+  [1m[36mMarque Load (0.4ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (27.0ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 86ms (Views: 84.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:28 +0100
+Processing by HomeController#dashboard as HTML
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" IS NULL ORDER BY "motos"."id" ASC[0m
+  [1m[36mMarque Load (0.5ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (17.7ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 92ms (Views: 90.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:28 +0100
+Processing by HomeController#dashboard as HTML
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" IS NULL ORDER BY "motos"."id" ASC[0m
+  [1m[36mMarque Load (0.4ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (21.8ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 108ms (Views: 105.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:29 +0100
+Processing by HomeController#dashboard as HTML
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" IS NULL ORDER BY "motos"."id" ASC[0m
+  [1m[36mMarque Load (0.5ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (15.6ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 69ms (Views: 67.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:30 +0100
+Processing by HomeController#dashboard as HTML
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" IS NULL ORDER BY "motos"."id" ASC[0m
+  [1m[36mMarque Load (0.5ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (18.2ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 75ms (Views: 72.1ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:31 +0100
+Processing by HomeController#dashboard as HTML
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" IS NULL ORDER BY "motos"."id" ASC[0m
+  [1m[36mMarque Load (0.4ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (17.2ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 76ms (Views: 72.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2020-01-15 12:56:33 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (0.4ms)
+  Rendered devise/shared/_links.html.erb (1.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.3ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 94ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2020-01-15 12:56:41 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f7k3Joa/pWKXQw1e0BFa1eUeaXlIflh1E0zV2zYQkSPiqogTB0CHeXCtSL/bJPTVUEI6FXgUp7YICs7orpRAMQ==", "user"=>{"email"=>"adresseadechet0212+1@gmail.com", "first_name"=>"Jimmy", "last_name"=>"Gressier", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "adresseadechet0212+1@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "first_name", "last_name") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["email", "adresseadechet0212+1@gmail.com"], ["encrypted_password", "$2a$11$iE.PA8b4JjDrCWvXxWOKvOlwDUg6ARM3hQm2u0RD.BECRBZ.qeOwS"], ["created_at", "2020-01-15 11:56:41.301893"], ["updated_at", "2020-01-15 11:56:41.301893"], ["first_name", "Jimmy"], ["last_name", "Gressier"]]
+  [1m[35m (69.9ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 217ms (ActiveRecord: 71.2ms)
+
+
+Started GET "/" for ::1 at 2020-01-15 12:56:41 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.7ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.6ms)
+Completed 200 OK in 56ms (Views: 55.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:43 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (0.5ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 1 ORDER BY "motos"."id" ASC[0m
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (17.0ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 81ms (Views: 76.8ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/double_select/6" for ::1 at 2020-01-15 12:56:46 +0100
+Processing by HomeController#double_select as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mModele Load (0.8ms)[0m  [1m[34mSELECT "modeles".* FROM "modeles" WHERE "modeles"."marque_id" = $1[0m  [["marque_id", 6]]
+Completed 200 OK in 8ms (Views: 0.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/double_select/1" for ::1 at 2020-01-15 12:56:48 +0100
+Processing by HomeController#double_select as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mModele Load (0.6ms)[0m  [1m[34mSELECT "modeles".* FROM "modeles" WHERE "modeles"."marque_id" = $1[0m  [["marque_id", 1]]
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 3.7ms)
+
+
+Started POST "/motos" for ::1 at 2020-01-15 12:56:58 +0100
+Processing by MotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zFwaeKBdObjkywUf+S0vOPuWG1/9Ykym0v5FTtsrRfBDvL2fu/6r5/McbWb/Qj94W+TTJJqoeBwetQAfQFKDaw==", "moto"=>{"marque_id"=>"1", "modele"=>"1", "date_circu"=>"2020-01-01", "km"=>"1500"}, "commit"=>"Sauvegarder"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mModele Load (0.3ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "motos" ("user_id", "date_circu", "km", "date_modif", "modele_id", "marque_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["user_id", 1], ["date_circu", "2020-01-01"], ["km", 1500], ["date_modif", "2020-01-15"], ["modele_id", 1], ["marque_id", 1]]
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 24ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/dashboard" for ::1 at 2020-01-15 12:56:58 +0100
+Processing by HomeController#dashboard as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering home/dashboard.html.erb within layouts/application
+  [1m[36mMoto Load (1.0ms)[0m  [1m[34mSELECT "motos".* FROM "motos" WHERE "motos"."user_id" = 1 ORDER BY "motos"."id" ASC[0m
+  [1m[36mModele Load (0.2ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT "marques".* FROM "marques" ORDER BY "marques"."nom" ASC[0m
+  Rendered home/dashboard.html.erb within layouts/application (16.6ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 89ms (Views: 82.8ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-15 12:57:00 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.6ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.5ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.4ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_sante.html.erb (0.6ms)
+  Rendered shared/_km.html.erb (3.1ms)
+  [1m[36mOperation Load (0.8ms)[0m  [1m[34mSELECT "operations".* FROM "operations" ORDER BY "operations"."id" ASC[0m
+  Rendered shared/_entretien.html.erb (13.6ms)
+  [1m[36mEntretien Load (0.5ms)[0m  [1m[34mSELECT "entretiens".* FROM "entretiens" WHERE "entretiens"."moto_id" = $1 ORDER BY "entretiens"."id" ASC[0m  [["moto_id", 1]]
+  [1m[36mCACHE Entretien Load (0.0ms)[0m  [1m[34mSELECT "entretiens".* FROM "entretiens" WHERE "entretiens"."moto_id" = $1 ORDER BY "entretiens"."id" ASC[0m  [["moto_id", 1]]
+  Rendered shared/_historique.html.erb (1.9ms)
+  Rendered motos/detail.html.erb within layouts/application (27.8ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 109ms (Views: 78.5ms | ActiveRecord: 12.1ms)
+
+
+Started PATCH "/motos/1/update_km" for ::1 at 2020-01-15 12:57:06 +0100
+Processing by MotosController#update_km as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qvotroFF0n951hYjOMrFiBE/yYae/0P8EAC8qp+dalShrb8xfFtWeanLzj4HKvGfUR/sfv/2uRqGp5+IJKQ0LQ==", "moto"=>{"km"=>"1501"}, "commit"=>"Sauvegarder", "moto_id"=>"1"}
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mModele Load (0.3ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "motos" SET "km" = $1 WHERE "motos"."id" = $2[0m  [["km", 1501], ["id", 1]]
+  [1m[35m (200.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/motos/1/detail
+Completed 302 Found in 209ms (ActiveRecord: 201.8ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-15 12:57:06 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.4ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.3ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.3ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_sante.html.erb (0.7ms)
+  Rendered shared/_km.html.erb (4.4ms)
+  [1m[36mOperation Load (0.5ms)[0m  [1m[34mSELECT "operations".* FROM "operations" ORDER BY "operations"."id" ASC[0m
+  Rendered shared/_entretien.html.erb (10.3ms)
+  [1m[36mEntretien Load (0.5ms)[0m  [1m[34mSELECT "entretiens".* FROM "entretiens" WHERE "entretiens"."moto_id" = $1 ORDER BY "entretiens"."id" ASC[0m  [["moto_id", 1]]
+  [1m[36mCACHE Entretien Load (0.0ms)[0m  [1m[34mSELECT "entretiens".* FROM "entretiens" WHERE "entretiens"."moto_id" = $1 ORDER BY "entretiens"."id" ASC[0m  [["moto_id", 1]]
+  Rendered shared/_historique.html.erb (2.1ms)
+  Rendered motos/detail.html.erb within layouts/application (23.5ms)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 85ms (Views: 79.6ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/motos/1/entretiens" for ::1 at 2020-01-15 12:57:26 +0100
+Processing by EntretiensController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+SHbWdihuKQdUupaxmm9qFlDqSnjECXkdIxB7YdWOxTydknGJb88os1PMkf5iYm/GWOM0YIZ3wLiK2LPPG9lbQ==", "entretien"=>{"operation_id"=>"1", "date"=>"2020-01-02", "km"=>"1000", "description"=>"huilde castrol 5w40", "prix"=>"50"}, "commit"=>"Sauvegarder", "moto_id"=>"1"}
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mOperation Load (0.2ms)[0m  [1m[34mSELECT  "operations".* FROM "operations" WHERE "operations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "entretiens" ("description", "date", "km", "prix", "moto_id", "operation_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["description", "huilde castrol 5w40"], ["date", "2020-01-02"], ["km", 1000], ["prix", "50"], ["moto_id", 1], ["operation_id", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/motos/1/detail
+Completed 302 Found in 8ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/motos/1/detail" for ::1 at 2020-01-15 12:57:26 +0100
+Processing by MotosController#detail as HTML
+  Parameters: {"moto_id"=>"1"}
+  [1m[36mMoto Load (0.3ms)[0m  [1m[34mSELECT  "motos".* FROM "motos" WHERE "motos"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering motos/detail.html.erb within layouts/application
+  [1m[36mModele Load (0.3ms)[0m  [1m[34mSELECT  "modeles".* FROM "modeles" WHERE "modeles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mMarque Load (0.2ms)[0m  [1m[34mSELECT  "marques".* FROM "marques" WHERE "marques"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_sante.html.erb (0.9ms)
+  Rendered shared/_km.html.erb (3.6ms)
+  [1m[36mOperation Load (0.3ms)[0m  [1m[34mSELECT "operations".* FROM "operations" ORDER BY "operations"."id" ASC[0m
+  Rendered shared/_entretien.html.erb (8.4ms)
+  [1m[36mEntretien Load (0.4ms)[0m  [1m[34mSELECT "entretiens".* FROM "entretiens" WHERE "entretiens"."moto_id" = $1 ORDER BY "entretiens"."id" ASC[0m  [["moto_id", 1]]
+  [1m[36mOperation Load (0.6ms)[0m  [1m[34mSELECT  "operations".* FROM "operations" WHERE "operations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE Entretien Load (0.0ms)[0m  [1m[34mSELECT "entretiens".* FROM "entretiens" WHERE "entretiens"."moto_id" = $1 ORDER BY "entretiens"."id" ASC[0m  [["moto_id", 1]]
+  [1m[36mCACHE Operation Load (0.0ms)[0m  [1m[34mSELECT  "operations".* FROM "operations" WHERE "operations"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_historique.html.erb (5.5ms)
+  Rendered motos/detail.html.erb within layouts/application (24.1ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered shared/_navbar.html.erb (2.1ms)
+Completed 200 OK in 87ms (Views: 82.0ms | ActiveRecord: 2.6ms)
+
+
