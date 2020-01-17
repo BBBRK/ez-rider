@@ -62,6 +62,9 @@ gem 'jquery-rails'
 gem 'font-awesome-sass', '~> 5.11.2'
 gem 'webpacker'
 gem 'rails-i18n'
+gem 'cloudinary'
+gem 'figaro'
+gem 'carrierwave', '~> 2.0'
 
 group :production do
     gem 'pg', '~> 0.21'

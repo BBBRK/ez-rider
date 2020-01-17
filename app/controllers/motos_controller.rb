@@ -39,6 +39,17 @@ class MotosController < ApplicationController
         redirect_to dashboard_path
     end
 
+    def add_photo
+        # @moto.photo = params[:moto][:photo]
+        # @moto.save!
+        puts "boupe"
+        puts "boupe"
+        puts "boupe"
+        puts "boupe"
+        puts "boupe"
+        
+    end
+
     private
 
     def set_moto
