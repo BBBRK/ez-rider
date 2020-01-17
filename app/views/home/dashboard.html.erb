@@ -10,6 +10,9 @@
                 <div class="card">
                     <div class="card-body">
                         <h2 class="card-title"><%= moto.modele.nom %></h2>
+                        <% if moto.photo.nil? %>
+                            <%= image_tag moto.modele.nom + '.jpg', :class => 'cards-photo', alt: "motorcycle" %>
+                        <% end %>
                         <hr class="horizontal-line hr-userindex">
                         <small class="small">Mise à jour le </small><%= link_to moto.date_modif.strftime('%d-%m-%Y'), moto_detail_path(moto), :class => "small href-date" %>
                     </div>

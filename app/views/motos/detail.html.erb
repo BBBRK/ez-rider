@@ -29,7 +29,9 @@
 
             <div class="col col-lg-6 col-md-12 col-sm-12 col-xs-12">
                 <div class="upload-btn-wrapper container">
-
+                    <% if @moto.photo.nil? %>
+                        <%= image_tag @moto.modele.nom + '.jpg', :class => 'photo-detail', :id => 'detailImg', alt: "motorcycle" %>
+                    <% end %>
                 </div>
                 <small class="changerPhoto">Cliquez sur la photo pour la changer !</small>
             </div>
