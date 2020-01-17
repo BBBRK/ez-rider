@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200113102919) do
+ActiveRecord::Schema.define(version: 20200117112954) do
 
   create_table "entretiens", force: :cascade do |t|
     t.string "description"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20200113102919) do
     t.date "date_modif"
     t.integer "modele_id"
     t.integer "marque_id"
+    t.string "photo"
     t.index ["user_id"], name: "index_motos_on_user_id"
   end
 
